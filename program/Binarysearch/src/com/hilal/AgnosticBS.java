@@ -4,7 +4,7 @@ public class AgnosticBS {
     public static void main(String[] args) {
         //int[] arr = {-32,-21,0,1,2,3,4,5,6,7,8,9,12};
         int[] arr = {9,7,5,3,2,1};
-        int target = 2;
+        int target = 1;
         System.out.println(binarysearch(arr,target));
     }
     static int binarysearch(int[] arr, int target){
