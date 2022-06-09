@@ -1,9 +1,9 @@
 package com.hilal;
-//https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/
-public class Rotatedsortedarray {
+
+public class Rotatedsortedarrayrepeat {
     public static void main(String[] args) {
-        int[] arr = {6,7,8,9,1,2,3,4,5};
-        int target = 6;
+        int[] arr = {6,6,6,6,6,7,8,9,1,2,3,4,5};
+        int target = 7;
         System.out.println(findrotated(arr,target));
     }
     static int findrotated(int[] nums,int target){
@@ -49,11 +49,21 @@ public class Rotatedsortedarray {
             if(arr[mid-1]>arr[mid]){
                 return mid - 1;
             }
-            if(arr[start]>arr[mid]){
-                end = mid - 1;
+            if(arr[start]==arr[mid]&&arr[mid]==arr[end]) {
+                if(arr[start]>arr[start+1]){
+                    return start;
+                }
+                start++;
+                if(arr[end-1]>arr[end]){
+                    return end-1;
+                }
+                end--;
+            }
+            else if(arr[start]<arr[mid] || (arr[mid]==arr[start] && arr[mid]>arr[end])){
+                start = mid + 1;
             }
             else{
-                start = mid + 1;
+                end = mid -1;
             }
         }
         return -1;
