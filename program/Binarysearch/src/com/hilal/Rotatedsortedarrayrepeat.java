@@ -2,8 +2,8 @@ package com.hilal;
 
 public class Rotatedsortedarrayrepeat {
     public static void main(String[] args) {
-        int[] arr = {6,6,6,6,6,7,8,9,1,2,3,4,5};
-        int target = 7;
+            int[] arr = {6,6,6,6,6,7,8,9,1,2,3,4,5};
+            int target = 7;
         System.out.println(findrotated(arr,target));
     }
     static int findrotated(int[] nums,int target){
