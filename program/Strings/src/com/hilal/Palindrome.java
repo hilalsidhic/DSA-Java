@@ -6,10 +6,6 @@ public class Palindrome {
     }
     static boolean isPalindrome(String s) {
         s=s.toLowerCase();
-        StringBuilder builder = new StringBuilder();
-        builder.append(s);
-        builder =builder.reverse();
-        builder.equals(s)
         s=s.replaceAll(" ","");
         s=s.replaceAll("[^a-zA-Z0-9]","");
         int first = 0;
