@@ -1,4 +1,4 @@
-package Strings;
+package com.hilal.Strings;
 
 public class Skipacharacter {
     public static void main(String[] args) {

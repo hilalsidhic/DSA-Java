@@ -1,4 +1,4 @@
-package Subsets;
+package com.hilal.Subsets;
 
 import java.util.ArrayList;
 import java.util.Arrays;

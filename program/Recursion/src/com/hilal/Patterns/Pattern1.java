@@ -1,4 +1,4 @@
-package Patterns;
+package com.hilal.Patterns;
 //****
 //***
 //**
