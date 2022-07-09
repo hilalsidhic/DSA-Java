@@ -34,7 +34,6 @@ public class Sudoku {
             if (isnotComplete)
                 break;
         }
-        Character.compare()
         if (isnotComplete){
             for (int i = 1; i <= 9; i++) {
                 if (isValid(board,row,col,i)){
