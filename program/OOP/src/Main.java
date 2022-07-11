@@ -4,6 +4,7 @@ public class Main {
         Student hilal = new Student();
         Student mila = new Student(12,"mila",92.8f);
         Student bila = new Student(hilal);
+        Student ardee = new Student();
         System.out.println(hilal.rno);
         System.out.println(bila.name);
         System.out.println(bila.marks);
@@ -14,9 +15,7 @@ class Student{
     String name;
     float marks;
     Student (){                     //Constuctor
-        this.rno=8;
-        this.name="hilal";
-        this.marks=80f;
+        this (13,"default",84.5f);
     }
     Student (int rno,String name,float marks){
         this.rno = rno;                                     //parameterised constuctors
